@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aim</title>
+    <style>
+    .tablero {
+    display: grid;
+   /*  grid-template-columns: repeat(3, 100px); */
+    gap: 5px;
+    margin: 20px auto;
+    
+  }
+
+  .casilla {
+    width: 400px;
+    height: 400px;
+    font-size: 2rem;
+   position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0f0f0;
+    border: none;
+  }
+
+  .casillaclick{
+     width: 70px;
+    height: 70px;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: red;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+  }
+  
+    </style>
+</head>
+<body>
+    
+<h1>Haz click en el cuadrado</h1>
+
+<p id="msg"></p>
+    <div class="tablero" id="tablero"></div>
+<button id="iniciarBtn" name="iniciarBtn" type="button">Iniciar</button>
+<div id="zonaJuego"></div>
+
+
+
+
+<script src="/JS/juegoExplicacion.js"></script>
+</body>
+</html>
